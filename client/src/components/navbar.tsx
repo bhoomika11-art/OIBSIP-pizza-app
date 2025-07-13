@@ -24,26 +24,20 @@ export default function Navbar() {
           </div>
           
           <div className="hidden md:flex items-center space-x-6">
-            <Link href="/">
-              <a className={`text-gray-700 hover:text-pizza-orange transition-colors ${
-                location === '/' ? 'text-pizza-orange font-medium' : ''
-              }`}>
-                Home
-              </a>
+            <Link href="/" className={`text-gray-700 hover:text-pizza-orange transition-colors ${
+              location === '/' ? 'text-pizza-orange font-medium' : ''
+            }`}>
+              Home
             </Link>
-            <Link href="/build">
-              <a className={`text-gray-700 hover:text-pizza-orange transition-colors ${
-                location === '/build' ? 'text-pizza-orange font-medium' : ''
-              }`}>
-                Build Pizza
-              </a>
+            <Link href="/build" className={`text-gray-700 hover:text-pizza-orange transition-colors ${
+              location === '/build' ? 'text-pizza-orange font-medium' : ''
+            }`}>
+              Build Pizza
             </Link>
-            <Link href="/orders">
-              <a className={`text-gray-700 hover:text-pizza-orange transition-colors ${
-                location === '/orders' ? 'text-pizza-orange font-medium' : ''
-              }`}>
-                My Orders
-              </a>
+            <Link href="/orders" className={`text-gray-700 hover:text-pizza-orange transition-colors ${
+              location === '/orders' ? 'text-pizza-orange font-medium' : ''
+            }`}>
+              My Orders
             </Link>
           </div>
 
